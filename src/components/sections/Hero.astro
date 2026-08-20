@@ -6,6 +6,7 @@ import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import Platzi from "@/icons/Platzi.astro";
+import Website from "@/icons/Website.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 
 import { getI18N } from "@/i18n/";
@@ -22,6 +23,7 @@ const SOCIAL_ICONS: Record<string, any> = {
   LinkedIn,
   X,
   Platzi,
+  Website,
 };
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
