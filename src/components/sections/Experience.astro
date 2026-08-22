@@ -44,14 +44,19 @@ const { work } = i18n.cv;
               <footer class="work-experience">
                 <p>{summary}</p>
                 <ul>
-                  {tasks?.map(({ summary, technologies }) => (
-                    <li>
-                      {summary}{" "}
-                      {technologies && technologies?.length > 0 && (
-                        <small>({technologies?.join(", ")})</small>
-                      )}
-                    </li>
-                  ))}
+                  {tasks?.map((task) => {
+                    const technologies =
+                      "technologies" in task ? task.technologies : undefined;
+
+                    return (
+                      <li>
+                        {task.summary}
+                        {technologies && technologies.length > 0 && (
+                          <small> ({technologies.join(", ")})</small>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </footer>
             </article>
