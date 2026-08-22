@@ -10,7 +10,7 @@
   },
   "THE_NEXT_BIG_COMPANY": {
     "TITLE": "The next big company",
-    "SUMMARY": "I am currently looking for a company that will provide me with the support to be able to grow even more in the professional field. Contact me, and together, let's ensure that the next significant client has a great experience.",
+    "SUMMARY": "I’m looking for teams solving technically ambitious problems where I can contribute through engineering, architecture, and mentorship. Get in touch, and let’s work together to build great solutions and deliver exceptional client experiences.",
     "COMING_SOON": "Coming soon"
   },
   "EDUCATION": "Education",
@@ -22,5 +22,10 @@
     "ACTIONS": "Actions",
     "PRINT": "Print",
     "GO_TO": "Go to"
+  },
+  "THEME": {
+    "TOGGLE": "Toggle theme",
+    "TO_DARK": "Switch to dark mode",
+    "TO_LIGHT": "Switch to light mode"
   }
 }

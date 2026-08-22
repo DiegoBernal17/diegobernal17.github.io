@@ -137,7 +137,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   figure {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--figure-bg);
     border-radius: 16px;
   }
 
@@ -164,11 +164,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   small {
-    color: #bbb;
+    color: var(--muted-color);
   }
 
   footer {
-    color: #555;
+    color: var(--chip-color);
     font-size: 0.65rem;
     display: flex;
     gap: 4px;
@@ -176,11 +176,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   footer a {
-    color: #777;
+    color: var(--icon-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(200 200 200 / 50%);
+    border: 1px solid var(--border-color);
     padding: 4px;
     height: 32px;
     width: 32px;
@@ -189,8 +189,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
+    background: var(--hover-bg);
+    border: 1px solid var(--hover-border);
   }
 
   @media (width <= 700px) {

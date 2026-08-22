@@ -8,6 +8,7 @@ import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
 import Interests from "@/components/sections/Interests.astro";
 import LanguageSelector from "@/components/LanguageSelector.astro";
+import ThemeToggle from "@/components/ThemeToggle.astro";
 
 import KeyboardManager from "@/components/KeyboardManager.astro";
 
@@ -21,7 +22,10 @@ const firstName = name.split(" ")[0];
 ---
 
 <Layout title={`${i18n.PORTFOLIO_OF} ${firstName} - ${label}`}>
-  <LanguageSelector />
+  <div class="top-controls no-print">
+    <ThemeToggle />
+    <LanguageSelector />
+  </div>
   <main>
     <Hero />
     <About />
@@ -43,8 +47,18 @@ const firstName = name.split(" ")[0];
     margin: auto;
     width: 100%;
   }
+  .top-controls {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 10;
+  }
+
   footer {
-    color: #aaa;
+    color: var(--footer-text);
     text-align: center;
     margin-top: 4rem;
   }

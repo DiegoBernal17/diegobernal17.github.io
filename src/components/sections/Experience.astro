@@ -17,13 +17,13 @@ const { work } = i18n.cv;
           <article>
             <header>
               <div>
-                <h3>{i18n.THE_NEXT_BIG_COMPANY.TITLE}</h3>
+                <h4>{i18n.THE_NEXT_BIG_COMPANY.TITLE}</h4>
                 <h4> -</h4>
               </div>
               <time>{i18n.THE_NEXT_BIG_COMPANY.COMING_SOON}</time>
             </header>
             <footer>
-              <p>{i18n.THE_NEXT_BIG_COMPANY.SUMMARY}</p>
+              <small>{i18n.THE_NEXT_BIG_COMPANY.SUMMARY}</small>
             </footer>
           </article>
         </li>
@@ -73,7 +73,7 @@ const { work } = i18n.cv;
     opacity: 0.7;
     transform: scale(0.95);
     user-select: none;
-
+    border: 1px solid var(--border-color);
     transition: all 300ms ease-in-out;
     &:hover {
       opacity: 1;
@@ -120,7 +120,7 @@ const { work } = i18n.cv;
       color: var(--light-color);
       gap: 10px;
       small {
-        color: var(---color);
+        color: var(--light-color);
         opacity: 0.6;
       }
     }

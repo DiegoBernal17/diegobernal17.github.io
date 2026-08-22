@@ -71,9 +71,9 @@ const { projects } = i18n.cv;
 
     & .tooltiptext {
       visibility: hidden;
-      background-color: #888;
+      background-color: var(--tooltip-bg);
       opacity: 0.5;
-      color: #fff;
+      color: var(--tooltip-color);
       border-radius: 6px;
       padding: 5px;
       position: absolute;
@@ -107,7 +107,7 @@ const { projects } = i18n.cv;
 
   article {
     border-radius: 8px;
-    border: 1px solid rgb(200 200 200 / 50%);
+    border: 1px solid var(--border-color);
     gap: 16px;
     display: flex;
     flex-direction: column;
@@ -147,8 +147,8 @@ const { projects } = i18n.cv;
 
   footer span {
     border-radius: 6px;
-    background: #eee;
-    color: #444;
+    background: var(--chip-bg);
+    color: var(--chip-color);
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
@@ -165,7 +165,7 @@ const { projects } = i18n.cv;
 
     article {
       border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
+      box-shadow: var(--card-shadow);
       padding: 0 0 16px 0;
     }
   }

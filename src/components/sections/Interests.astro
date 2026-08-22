@@ -35,7 +35,7 @@ const { interests } = i18n.cv;
     flex-wrap: wrap;
 
     li {
-      border: 1px solid rgb(200 200 200 / 50%);
+      border: 1px solid var(--border-color);
       border-radius: 6px;
       padding: 6px 8px;
 
@@ -49,8 +49,8 @@ const { interests } = i18n.cv;
         gap: 8px;
         flex-wrap: wrap;
         span {
-          background-color: #eee;
-          color: #555;
+          background-color: var(--chip-bg);
+          color: var(--chip-color);
           font-size: 0.8rem;
           font-weight: 500;
           padding: 0.2rem 0.6rem;
@@ -62,8 +62,8 @@ const { interests } = i18n.cv;
 
           user-select: none;
           &:hover {
-            background-color: #ccc;
-            color: #000;
+            background-color: var(--chip-hover-bg);
+            color: var(--chip-hover-color);
           }
         }
       }

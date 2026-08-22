@@ -7,9 +7,9 @@
     "email": "diego.bernal17@gmail.com",
     "phone": "+52 8442220828",
     "url": "https://lanrebd.github.io/",
-    "summary": "Con más de 7 años de experiencia en el desarrollo web, me he adentrado en este mundo de la programación y he desarrollado una gran variedad de páginas y aplicaciones web para diversos clientes y también como pasatiempo. Pero más que nada me especializo en resolver problemas o necesidades mediante el código y a ayudar a más desarrolladores en crecer en este mundo de la programación.",
+    "summary": "Desarrollador Web Senior con más de 8 años de experiencia diseñando y desarrollando aplicaciones web de alto rendimiento y escalables. Amplia experiencia en desarrollo full-stack con JavaScript, arquitectura de software y resolución de problemas técnicos complejos. Experiencia liderando iniciativas de desarrollo, mejorando la eficiencia operativa y brindando mentoría a desarrolladores junior. Enfocado en construir sistemas escalables y mantenibles que generen valor para el negocio y ofrezcan experiencias de usuario excepcionales.",
     "location": {
-      "address": "",
+      "address": "Coahuila",
       "postalCode": "25000",
       "city": "Saltillo",
       "countryCode": "MX",
@@ -44,9 +44,36 @@
       "positiion": "Frontend Developer Sr",
       "startDate": "2025-02-03",
       "endDate": "",
-      "summary": "Desarrollo aplicaciones frontend utilizando React y React Router v7 (anteriormente Remix), optimizando un enrutamiento eficiente del lado del cliente y flujos de usuario intuitivos. Trabajo en conjunto con el equipo de backend para implementar soluciones escalables para clientes en Estados Unidos.",
-      "highlights": ["Senior developer", "Web Developer", "Frontend"],
-      "tasks": []
+      "summary": "Lideré el desarrollo de una aplicación web escalable utilizando React y React Router v7+, tomando decisiones de arquitectura y estableciendo prácticas de desarrollo enfocadas en escalabilidad, rendimiento y mantenibilidad.",
+      "highlights": [
+        "Desarrollador Senior",
+        "Desarrollo Web",
+        "Frontend",
+        "React",
+        "React Router",
+        "SSR",
+        "Arquitectura Web"
+      ],
+      "tasks": [
+        {
+          "summary": "Lideré el desarrollo de una plataforma moderna basada en un sistema existente con miles de usuarios, adoptando tecnologías y prácticas de desarrollo actuales."
+        },
+        {
+          "summary": "Diseñé la arquitectura de la aplicación y tomé decisiones clave sobre librerías, patrones, escalabilidad, rendimiento y mantenibilidad."
+        },
+        {
+          "summary": "Desarrollé nuevos módulos utilizando React Router v7+, SSR, loaders, actions, caching y flujos optimizados de manejo de datos."
+        },
+        {
+          "summary": "Desarrollé una librería interna reutilizable para estandarizar los flujos de autenticación y operaciones CRUD entre múltiples proyectos mediante actions y loaders de React Router."
+        },
+        {
+          "summary": "Establecí buenas prácticas de desarrollo frontend, realicé code reviews mediante PRs y brindé asesoría técnica a otros desarrolladores."
+        },
+        {
+          "summary": "Colaboré con el equipo de backend para diseñar e implementar soluciones escalables para clientes en Estados Unidos."
+        }
+      ]
     },
     {
       "name": "Voth Solutions",

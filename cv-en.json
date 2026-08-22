@@ -7,9 +7,9 @@
     "email": "diego.bernal17@gmail.com",
     "phone": "+52 8442220828",
     "url": "https://lanrebd.github.io/",
-    "summary": "Web developer with over 7 years of experience creating high-performance websites and scalable web application. Skilled in full-stack development with Javascript, solving complex problems through code, and mentoring junior developers. Key accomplishments include leading the development of systems that improved operational efficiency. Passionate about optimizing user experiences and ensuring quality in every project.",
+    "summary": "Senior Web Developer with over 8 years of experience designing and building high-performance, scalable web applications. Strong expertise in full-stack JavaScript development, software architecture, and solving complex technical challenges. Experienced in leading development initiatives, improving operational efficiency, and mentoring junior developers. Focused on building scalable, maintainable systems that deliver measurable business value and exceptional user experiences.",
     "location": {
-      "address": "",
+      "address": "Coahuila",
       "postalCode": "25000",
       "city": "Saltillo",
       "countryCode": "MX",
@@ -44,9 +44,36 @@
       "positiion": "Frontend Developer Sr",
       "startDate": "2025-02-03",
       "endDate": "",
-      "summary": "Develop frontend applications using React and React Router v7+ (formerly Remix), optimizing efficient client-side routing and intuitive user flows. I work alongside the back-end team to implement scalable solutions for clients in the US. I have been responsible for the development of a large-scale project, which has involved identifying and implementing the best solutions, architecture, and development practices.",
-      "highlights": ["Senior developer", "Web Developer", "Frontend"],
-      "tasks": []
+      "summary": "Led the development of a scalable web application using React and React Router v7+, driving architecture, technical decisions, and development practices focused on scalability, performance, and maintainability.",
+      "highlights": [
+        "Senior Developer",
+        "Web Developer",
+        "Frontend",
+        "React",
+        "React Router",
+        "SSR",
+        "Web Architecture"
+      ],
+      "tasks": [
+        {
+          "summary": "Led the development of a modern platform based on an existing system serving thousands of users, adopting current technologies and development practices."
+        },
+        {
+          "summary": "Designed application architecture and made key decisions around libraries, patterns, scalability, performance, and maintainability."
+        },
+        {
+          "summary": "Developed new modules using React Router v7+, SSR, loaders, actions, caching, and optimized data flows."
+        },
+        {
+          "summary": "Developed an internal reusable library to standardize authentication and CRUD workflows across multiple projects using React Router actions and loaders."
+        },
+        {
+          "summary": "Established frontend best practices, conducted PR code reviews, and provided technical guidance to other developers."
+        },
+        {
+          "summary": "Collaborated with backend developers to design and implement scalable solutions for US-based clients."
+        }
+      ]
     },
     {
       "name": "Voth Solutions",

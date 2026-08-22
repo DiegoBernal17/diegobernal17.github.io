@@ -1,0 +1,124 @@
+---
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<button
+  id="theme-toggle"
+  type="button"
+  class="theme-toggle"
+  title={i18n.THEME.TOGGLE}
+  aria-label={i18n.THEME.TOGGLE}
+  data-to-dark={i18n.THEME.TO_DARK}
+  data-to-light={i18n.THEME.TO_LIGHT}
+>
+  <svg
+    class="icon-moon"
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+  </svg>
+  <svg
+    class="icon-sun"
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2"></path>
+    <path d="M12 20v2"></path>
+    <path d="m4.93 4.93 1.41 1.41"></path>
+    <path d="m17.66 17.66 1.41 1.41"></path>
+    <path d="M2 12h2"></path>
+    <path d="M20 12h2"></path>
+    <path d="m6.34 17.66-1.41 1.41"></path>
+    <path d="m19.07 4.93-1.41 1.41"></path>
+  </svg>
+</button>
+
+<script>
+  const root = document.documentElement;
+  const button = document.querySelector<HTMLButtonElement>("#theme-toggle");
+  const labels = {
+    toDark: button?.getAttribute("data-to-dark") ?? "",
+    toLight: button?.getAttribute("data-to-light") ?? "",
+  };
+
+  function currentTheme() {
+    return root.dataset.theme === "dark" ? "dark" : "light";
+  }
+
+  function applyTheme(theme: "light" | "dark", persist = false) {
+    root.dataset.theme = theme;
+    if (persist) localStorage.setItem("theme", theme);
+    if (!button) return;
+    const label = theme === "dark" ? labels.toLight : labels.toDark;
+    if (label) {
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+    }
+  }
+
+  applyTheme(currentTheme());
+
+  button?.addEventListener("click", () => {
+    applyTheme(currentTheme() === "dark" ? "light" : "dark", true);
+  });
+
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+    if (localStorage.getItem("theme")) return;
+    applyTheme(event.matches ? "dark" : "light");
+  });
+</script>
+
+<style>
+  .theme-toggle {
+    color: var(--icon-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .theme-toggle:hover {
+    background: var(--hover-bg);
+    border-color: var(--hover-border);
+  }
+
+  .icon-sun {
+    display: none;
+  }
+
+  :global(html[data-theme="dark"]) .icon-moon {
+    display: none;
+  }
+
+  :global(html[data-theme="dark"]) .icon-sun {
+    display: block;
+  }
+</style>
