@@ -12,9 +12,9 @@ const { projects } = i18n.cv;
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, image }) => {
+        ({ url, description, highlights, name, isActive, image }, index) => {
           return (
-            <li class="tooltip">
+            <li class:list={["tooltip", { featured: index === 0 }]}>
               {image && <span class="tooltiptext">Click to expand</span>}
               <article id="project">
                 {image && <img src={image} alt="GFG image" />}
@@ -154,6 +154,20 @@ const { projects } = i18n.cv;
     padding: 0.2rem 0.6rem;
     letter-spacing: normal;
   }
+
+  .featured {
+    grid-column: 1 / -1;
+  }
+
+  .featured article {
+    border-color: var(--title-color);
+    background: var(--skill-bg);
+  }
+
+  .featured article p {
+    font-size: 0.85rem;
+    line-height: 1.35rem;
+  }
   img {
     display: none;
     max-height: 160px;
@@ -167,6 +181,12 @@ const { projects } = i18n.cv;
       border: none;
       box-shadow: var(--card-shadow);
       padding: 0 0 16px 0;
+    }
+
+    .featured article {
+      border: 1px solid var(--title-color);
+      padding: 16px;
+      box-shadow: none;
     }
   }
 </style>

@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Diego Iván Padilla Bernal",
-    "label": "Full Stack JS Developer",
+    "label": "Senior Software Engineer - Full Stack JS",
     "image": "/me.webp",
     "birthday": "1996-01-17",
     "email": "diego.bernal17@gmail.com",
     "phone": "+52 8442220828",
     "url": "https://lanrebd.github.io/",
-    "summary": "Desarrollador Web Senior con más de 8 años de experiencia diseñando y desarrollando aplicaciones web de alto rendimiento y escalables. Amplia experiencia en desarrollo full-stack con JavaScript, arquitectura de software y resolución de problemas técnicos complejos. Experiencia liderando iniciativas de desarrollo, mejorando la eficiencia operativa y brindando mentoría a desarrolladores junior. Enfocado en construir sistemas escalables y mantenibles que generen valor para el negocio y ofrezcan experiencias de usuario excepcionales.",
+    "summary": "Más de 8 años diseñando y construyendo aplicaciones full-stack escalables con JavaScript. Me enfoco en arquitectura, rendimiento y sistemas mantenibles; he liderado el desarrollo y dado mentoría a otros ingenieros. Me importa entregar productos sólidos para los usuarios y útiles para el negocio.",
     "location": {
       "address": "Coahuila",
       "postalCode": "25000",
@@ -206,6 +206,12 @@
       "category": "Frontend"
     },
     {
+      "name": "React Router",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Routing", "SSR"],
+      "category": "Fullstack"
+    },
+    {
       "name": "Next.js",
       "level": "Advanced",
       "keywords": [
@@ -296,6 +302,12 @@
       "category": "Other"
     },
     {
+      "name": "AI-assisted coding",
+      "level": "Advanced",
+      "keywords": ["AI", "Productivity"],
+      "category": "Other"
+    },
+    {
       "name": "Redis",
       "level": "Intermediate",
       "keywords": ["Database", "In-Memory", "Data Storage", "Backend"],
@@ -334,10 +346,10 @@
   ],
   "projects": [
     {
-      "name": "Aplicación Web de Reclamaciones",
+      "name": "Plataforma de reclamaciones de seguros",
       "isActive": true,
-      "description": "Un gran proyecto que gestiona la administración de reclamaciones para seguros de hogar en EE. UU. y que actualmente cuenta con miles de usuarios activos.",
-      "highlights": ["CRM", "ERP", "Seguros"],
+      "description": "Plataforma a gran escala para reclamaciones de seguros de hogar en EE. UU. Cubre el flujo diario de reclamaciones y actualmente atiende a miles de usuarios activos.",
+      "highlights": ["Seguros", "Miles de usuarios activos", "Mercado de EE. UU."],
       "url": null
     },
     {
@@ -352,7 +364,7 @@
       "url": null
     },
     {
-      "name": "Web app 1",
+      "name": "CRM y plataforma de ventas para transporte",
       "isActive": true,
       "image": "/projects/project-1.webp",
       "description": "Sistema personalizado para la gestión de clientes, cotizaciones y vendedores con sistema de reportes.",

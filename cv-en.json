@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Diego Iván Padilla Bernal",
-    "label": "Full Stack JS Developer",
+    "label": "Senior Software Engineer - Full Stack JS",
     "image": "/me.webp",
     "birthday": "1996-01-17",
     "email": "diego.bernal17@gmail.com",
     "phone": "+52 8442220828",
     "url": "https://lanrebd.github.io/",
-    "summary": "Senior Web Developer with over 8 years of experience designing and building high-performance, scalable web applications. Strong expertise in full-stack JavaScript development, software architecture, and solving complex technical challenges. Experienced in leading development initiatives, improving operational efficiency, and mentoring junior developers. Focused on building scalable, maintainable systems that deliver measurable business value and exceptional user experiences.",
+    "summary": "Over 8 years designing and building scalable full-stack JavaScript applications. I focus on architecture, performance, and maintainable systems, and I’ve led development work while mentoring other engineers. I care about shipping products that are solid for users and useful for the business.",
     "location": {
       "address": "Coahuila",
       "postalCode": "25000",
@@ -274,6 +274,12 @@
       "category": "Frontend"
     },
     {
+      "name": "React Router",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Routing", "SSR"],
+      "category": "Fullstack"
+    },
+    {
       "name": "Next.js",
       "level": "Advanced",
       "keywords": [
@@ -364,6 +370,12 @@
       "category": "Other"
     },
     {
+      "name": "AI-assisted coding",
+      "level": "Advanced",
+      "keywords": ["AI", "Productivity"],
+      "category": "Other"
+    },
+    {
       "name": "Redis",
       "level": "Intermediate",
       "keywords": ["Database", "In-Memory", "Data Storage", "Backend"],
@@ -410,10 +422,10 @@
   ],
   "projects": [
     {
-      "name": "Claims Web App",
+      "name": "Insurance claims platform",
       "isActive": true,
-      "description": "A big project that handles claims management for home insurance in the US and currently has thousands of active users.",
-      "highlights": ["CRM", "ERP", "Insurance"],
+      "description": "A large-scale platform for home insurance claims in the US. It covers the day-to-day claims workflow and currently serves thousands of active users.",
+      "highlights": ["Insurance", "Thousands of active users", "US Market"],
       "url": null
     },
     {
@@ -424,7 +436,7 @@
       "url": null
     },
     {
-      "name": "Web app 1",
+      "name": "Transportation CRM & Sales Platform",
       "isActive": true,
       "image": "/projects/project-1.webp",
       "description": "Customized system for customer management, quotations, and salespersons with reporting system.",
